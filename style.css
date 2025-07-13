@@ -1,0 +1,691 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto";
+}
+
+p {
+  font-family: "Roboto";
+}
+
+li {
+  font-family: "Roboto";
+}
+/* Шапка */
+header {
+    width: 1440px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 30%, rgba(255, 0, 0, 1) 100%);
+    margin-bottom: 30px;
+    position: sticky;
+    top:0px;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Roboto";
+}
+/* Меню */
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    gap:40px;
+
+}
+
+nav li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap:40px;
+    color: #ffffff;
+}
+
+nav a {
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Roboto';
+    padding: 10px;
+    border-radius: 30px;
+
+}
+
+
+nav a:hover {
+    padding: 10px;
+    background: black;
+    transition: all 1s ease-out;
+
+}
+
+#van:hover{
+  background-color:red;
+}
+
+#to:hover{
+  background-color:red;
+}
+
+#tree:hover{
+  background-color:red;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 70px;
+    height: 60px;
+
+}
+
+header button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  margin-right: 30px;
+  background-color: black;
+
+}
+
+header button  {
+  color: #ffffff;
+}
+
+header button:active {
+  background-color: #307c9d;
+}
+/* Главный контент */
+main {
+  width: 1440px;
+}
+/* Первый блок */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+  background-color: black;
+}
+.verh {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.verh p {
+  color: #ffffff;
+}
+
+.lenta {
+  width: 1300px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.lenta_video img:hover {
+  width: 610px;
+  transition: all 1s ease-out;
+}
+
+h1 {
+  font-family: "Roboto";
+  color: #ffffff;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.ul {
+  margin: 0;
+  display:flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+}
+
+.ul li {
+  padding: 10px;
+  list-style-type: none;
+  border-radius: 30px;
+  border: 2px solid white;
+  background-color: white;
+  width: 250px;
+}
+/* О нас */
+.o_nas {
+  width: 1440px;
+  height: 650px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+
+}
+
+h2 {
+  font-size: 32px;
+  padding-top: 20px;
+  font-family: "Roboto";
+}
+
+.glavnoe {
+  width: 1300px;
+  height: 450px;
+  margin: auto;
+  border: 4px solid red;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.glavnoe_img {
+  width: 450px;
+  height: 430px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.text_glavnoe {
+  width: 500px;
+}
+/* Новостная лента */
+.novosti_lenta {
+  width: 1440px;
+  height: 650px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.content_novosti_lenta {
+  width: 1300px;
+  height: 455px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.box_novosti {
+  width: 400px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 30px;
+  box-shadow: 5px 5px 2px white;
+  transition: all 0.2s ease-out;
+
+}
+
+.box_novosti:hover {
+  width: 403px;
+  height: 453px;
+  transition: all 0.2s ease-out;
+}
+
+.box_novosti_text {
+  width: 400px;
+  height: 200px;
+  background-color: grey;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.box_novosti_text p {
+  font-size: 24px;
+  line-height: 32px;
+  color: white;
+  text-align: center;
+}
+
+.a_size {
+  font-size: 30px;
+  color: white;
+}
+
+.a_size:hover {
+  color: red;
+}
+
+/* Обратная связь */
+.svaz {
+  width: 1440px;
+  height: 600px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.svaz_content {
+  width: 700px;
+  height: 450px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-top: 25px;
+}
+
+.svaz_content input {
+  margin-bottom: 20px;
+  height: 45px;
+  width: 600px;
+}
+
+#reset {
+  width: 300px;
+  height: 60px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+}
+
+#reset:active {
+  background-color: black;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  width: 1440px;
+  height: 180px;
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(90deg,rgba(255, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 100%);
+  align-items: center;
+  gap:170px;
+}
+
+.footer_box1 {
+  width: 300px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.footer_box1_content {
+  width: 300px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_box1_content p {
+  font-size: 26px;
+  color: white;
+}
+
+#contur {
+  border-radius: 30px;
+  border: 3px solid black;
+}
+
+.footer_box2 {
+  width: 300px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer_box2_content {
+  width: 300px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+/* Страница О НАС */
+.O_companii {
+  width: 1440px;
+  height: 850px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+  align-items: center;
+}
+
+.O_companii_content {
+  width: 1300px;
+  height: 710px;
+  background-color: green;
+  display: flex;
+
+}
+
+.O_companii_content_text {
+  width: 750px;
+  height: 700px;
+  background-color: #b3b3b3;
+  padding:5px;
+}
+
+.O_companii_content_text p {
+  line-height: 30px;
+  font-size: 22px;
+}
+
+.O_companii_content_img {
+  width: 550px;
+  height: 710px;
+  background-image: url('img/avtomaster.png');
+}
+
+/* Страница НОВОСТИ */
+.novosty {
+  width: 1440px;
+  height: 880px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.novosty_content {
+  width: 1300px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.novosty_boox {
+  width: 1300px;
+  height: 190px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border: 2px solid red;
+}
+
+.novosty_zagolovok {
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 9px;
+}
+
+.novost_blok1 {
+  width: 700px;
+  height: 190px;
+  background-color: #ffffff;
+}
+
+.fon_img1 {
+  width: 550px;
+  height: 190px;
+  background-image: url("img/новости1.png");
+  background-size: cover;
+}
+
+.fon_img2 {
+  width: 550px;
+  height: 190px;
+  background-image: url("img/новости2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.fon_img3 {
+  width: 550px;
+  height: 190px;
+  background-image: url("img/новости3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.novost_blok1 p {
+  font-size: 24px;
+  line-height: 30px;
+  padding-left: 5px;
+}
+
+h3{
+  font-size: 22px;
+}
+
+.footer_box3_content {
+  width: 100px;
+  height: 50px;
+  align-items: center;
+  justify-content:space-around;
+  display: flex;
+}
+
+.footer_box3_content a:hover {
+  background-color: black;
+  border-radius: 50%;
+}
+
+/* Страница Портфолио */
+.svaz {
+  width: 1440px;
+  height: 600px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.portfolio_content {
+  width: 1300px;
+  height: 570px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#svaz {
+  height: 700px;
+}
+#zagolovok {
+  padding-bottom: 10px;
+}
+
+.portfolio_box {
+  width: 1300px;
+  height: 230px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+
+}
+
+.portfolio_box img {
+  object-fit: cover;
+  box-shadow: 0 0 4px #FF0000;
+}
+
+/* Страница Услуги */
+.uslugi {
+  width: 1440px;
+  height: 600px;
+  background-color: black;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zena1 {
+  color: black;
+  border-bottom: 2px solid red;
+  font-size: 28px;
+}
+
+/* Страница АКЦИИ */
+.akzii {
+  width: 1440px;
+  height: 950px;
+  background-color: black;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.akzii_box {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  background-color: grey;
+  justify-content:center;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 5px 5px 2px white;
+  border-radius: 30px;
+
+
+}
+
+.akzii_text {
+  width: 450px;
+  height: 205px;
+  padding:10px;
+}
+
+.akzii_text p {
+  font-size: 28px;
+  color:white;
+}
+
+/* Старница Связвться с нами */
+#svaz_fon {
+  background-image: url(img/svaz.png);
+  background-position: right;
+  box-shadow:10px 5px 5px white;
+}
+
+/* Страница Контакты */
+.kontakti {
+  width: 1440px;
+  height: 650px;
+  background-color: black;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kontakti_content {
+  width: 1300px;
+  height: 450px;
+  display:flex;
+  justify-content:flex-end;
+  gap:120px;
+}
+
+.kontakti_content_text {
+  width: 400px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  gap:35px;
+}
+
+.kontakti_box {
+  width: 400px;
+  background-color: white;
+  border: 1px solid red;
+}
+
+.kontakti_box p {
+  font-size: 28px;
+  text-align: center;
+
+}
+/* форма */
+input{
+    width: 400px;
+    height: 40px;
+}
+/* Войти */
+.voiti_box {
+  width: 1440px;
+  height: 500px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.razmer {
+  padding: 30px;
+  background-color: white;
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.razmer input {
+  width: 450px;
+  height: 40px;
+  gap:40px;
+  display: flex;
+  flex-direction: column;
+}
+
+#knopka_voiti {
+  background-color: red;
+  color: white;
+  width: 250px;
+}
+
+#knopka_voiti:active {
+  background-color: black;
+}
